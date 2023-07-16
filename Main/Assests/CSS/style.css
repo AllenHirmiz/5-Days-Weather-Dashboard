@@ -1,8 +1,45 @@
-header {
+#page_header{
     text-align: center;
-    color: white;
-    background: rgb(2,0,36);
-    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,121,108,1) 0%, rgba(0,212,255,1) 100%);
-    padding: 1.5%;
+    background-color:#3d6488;
     font-family: 'Open Sans Condensed', sans-serif;
+    color: white
+
+}
+
+
+.listbtn{
+    background-color: #3d6488;
+    color: white;
+    font-family: 'Open Sans Condensed', sans-serif;
+    border-radius: 2px; 
+    margin-left: 20%;
+    margin-right: 20%;
+    width: 60%;
+    margin-top: 2px;
+    margin-bottom: 2px;
+
+}
+
+
+.left_div{
+    /* background-color: #e2d9be;  */
+    height: 100%; 
+}
+
+.card-body{
+    background-color: #3d6488;
+    color: white;
+}
+
+#searchbtn{
+    background-color: #3d6488;
+    color: white;
+    font-family: 'Open Sans Condensed', sans-serif;
+    border-radius: 2px; 
+    
+
+}
+
+.hide {
+    display: none;
 }
