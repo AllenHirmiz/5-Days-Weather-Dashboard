@@ -11,7 +11,7 @@ This project is mainly focused on showing up my skills in JS third party API's t
 https://github.com/AllenHirmiz/5-Days-Weather-Dashboard
 
 ## Website URL
-https://allenhirmiz.github.io/Agenda-Scheduler/Develop/
+https://allenhirmiz.github.io/5-Days-Weather-Dashboard/Main/
 
 ## Table of Contents
 Header

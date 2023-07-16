@@ -57,9 +57,7 @@ function renderButtons(){
 //on click function for search history buttons
 function listClicker(){
 $(".city-btn").on("click", function(event){
-    console.log("anybody home?")
     event.preventDefault();
-    console.log("hello?");
     city = $(this).text().trim();
     APIcalls(); 
 })
@@ -99,14 +97,13 @@ function APIcalls(){
     todayMainDiv.classList.remove("hide");
     fiveDaysMainDiv.classList.remove("hide");
     cityNameEl.innerHTML =(city+ " Weather");
-    todayDateEl.innerHTML = dayjs().format('dddd, MMMM D');
+    todayDateEl.innerHTML = city + ", " + dayjs().format('dddd, MMMM D');
     $.ajax({
         url: queryurl,
         method: "GET",
         
     }).then(function(response){
         let day_number = 0; 
-        console.log(response.list);
         //iterate through the 40 weather data sets
         for(let i=0; i< response.list.length; i++){
             
@@ -135,15 +132,7 @@ function APIcalls(){
          url:current_weather_url,
          method: "GET", 
      }).then(function(current_data){
-         console.log(current_data);
-
-    
-
-
-
-
          let temp = Math.round((current_data.main.temp - 273.15))
-         console.log("The temperature in " + city + " is: " + temp);
          $("#today-temp").text("Temperature: " + temp + String.fromCharCode(176)+"C");
          $("#today-humidity").text("Humidity: " + current_data.main.humidity+"%");
          $("#today-wind-speed").text("Wind Speed: " + current_data.wind.speed);
