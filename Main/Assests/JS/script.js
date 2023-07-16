@@ -4,7 +4,7 @@ let url="";
 let APIkey="";
 let queryurl ="";
 let currenturl = "";
-let citiesDiv = document.getElementById("searched_cities_container");
+let citiesDiv = document.getElementById("searched-cities");
 var cityNameEl = document.getElementById("city-name");
 var todayDateEl = document.getElementById("today-date");
 var todayMainDiv = document.getElementById("today-main-weather");
@@ -36,7 +36,8 @@ function storeCities(){
 
 //render buttons for each element in cities array as a search history for user
 function renderButtons(){
-    citiesDiv.innerHTML = ""; 
+    citiesDiv.innerHTML = "";
+    citiesDiv.setAttribute("class", "p-2 me-1") 
     if(cities == null){
         return;
     }
@@ -46,7 +47,8 @@ function renderButtons(){
 
         let buttonEl = document.createElement("button");
         buttonEl.textContent = cityName; 
-        buttonEl.setAttribute("class", "listbtn"); 
+        buttonEl.setAttribute("type", "button"); 
+        buttonEl.setAttribute("class", "city-btn col-12 block"); 
 
         citiesDiv.appendChild(buttonEl);
         listClicker();
@@ -54,7 +56,7 @@ function renderButtons(){
     }
 //on click function for search history buttons
 function listClicker(){
-$(".listbtn").on("click", function(event){
+$(".city-btn").on("click", function(event){
     console.log("anybody home?")
     event.preventDefault();
     console.log("hello?");

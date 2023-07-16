@@ -6,26 +6,6 @@
 
 }
 
-
-.listbtn{
-    background-color: #3d6488;
-    color: white;
-    font-family: 'Open Sans Condensed', sans-serif;
-    border-radius: 2px; 
-    margin-left: 20%;
-    margin-right: 20%;
-    width: 60%;
-    margin-top: 2px;
-    margin-bottom: 2px;
-
-}
-
-
-.left_div{
-    /* background-color: #e2d9be;  */
-    height: 100%; 
-}
-
 .card-body{
     background-color: #3d6488;
     color: white;
@@ -36,10 +16,31 @@
     color: white;
     font-family: 'Open Sans Condensed', sans-serif;
     border-radius: 2px; 
-    
-
 }
 
 .hide {
     display: none;
+}
+
+#searched-cities {
+    padding: 1.5rem;
+    margin-right: 0;
+    margin-left: 0;
+    border-width: 0.2rem;
+}
+
+
+button {
+    margin: 5px;
+    background-color: #3d6488;
+    color: #ffffff;
+}
+
+.form-control {
+    display:inline;
+    width: 80%;
+}
+
+.col-sm {
+    background-color: #3d6488;
 }
